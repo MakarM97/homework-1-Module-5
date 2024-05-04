@@ -3,6 +3,8 @@ class House:
         self.NumberOfFloors = NumberOfFloors
 
     def say_number(self):
+        while self.NumberOfFloors >= 10:
+            break
         print(f'Текущий этаж равен {self.NumberOfFloors}')
 
 
