@@ -2,7 +2,12 @@ class House:
     def __init__(self, NumberOfFloors):
         self.NumberOfFloors = NumberOfFloors
 
+    def say_number(self):
+        print(f'Текущий этаж равен {self.NumberOfFloors}')
+
+
+
 
 NumberOfFloors = House(10)
-for i in range(1, 11):
-    print('Текущий этаж равен', i)
+NumberOfFloors.say_number()
+
